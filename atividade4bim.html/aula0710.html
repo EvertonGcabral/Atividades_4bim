@@ -5,66 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução a JS</title>
 
-    <link rel="stylesheet" href="style0710.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 
 <body>
 
-    <h1>Oque é JavaScript</h1>
+    <section class="alinhar">
+        
+            <img class="logo" src="js.png" alt="logo">
 
-    <p>
-        JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores
-        e manipular comportamentos de páginas web. JavaScript, originalmente, é uma linguagem de programação client-side,
-        ou seja, é executada do lado do usuário, mais especificamente pelo navegador utilizado por este usuário.
-    </p>
+    </section>
 
-<h1>logo</h1>
+<section class="fundo">
 
-<img src="js.png" alt="logo">
+    <div class="all">
 
-<h1>historico</h1>
+        <h1>Oque é JavaScript</h1>
 
-<p>
-    Esta inovadora linguagem foi criada no ano de 1995, como dito
-    no início deste texto, pelo programador Brendan Eich que, na época, trabalhava para o navegador Netscape.
-</p>
-<p>
-    Com o objetivo de trazer mais “vida” à uma internet até então desenhada por imagens estáticas e textos,
-     a criação de uma linguagem de scripts acabou se tornando um grande trunfo competitivo para o Netscape.
-</p>
-<p>
-    Na época, os navegadores não eram nativos nos sistemas operacionais e para ter acesso a um software era necessário comprá-lo. Com o JavaScript,
-    o Netscape saiu à frente de seus concorrentes e se tornou o navegador mais utilizado do mercado em 1995.
-</p>
-
-<h1>principais comandos</h1>
-
-<h3>Variaveis</h3>
-<p>
-    Variáveis são espaços na memória do computador onde você pode armazenar dados. Você começa declarando
-     uma variável com a  palavra-chave var ou a palavra chave let, seguida por qualquer nome que você queira
-    chamá-la
-</p>
-<p>
-    let minhavariavel = 'nome'; ou var minhavariavel = 'nome' ;
-</p>
-<h3>Array</h3>
-<p>
-    Uma estrutura que permite armazenar vários valores(homogeneas e unidimensionais) em uma única variável,
-     conhecidas tambem como vetores.
-</p>
-<p>
-    let minhaVariavel = ['Everton','Zé','Steve','Fulano'];
-</p>
-<p>
-    Acesse cada item do array dessa maneira: minhaVariavel[0], minhaVariavel[1], etc.
-</p>
+            <p>
+                JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores
+                e manipular comportamentos de páginas web. JavaScript, originalmente, é uma linguagem de programação client-side,
+                ou seja, é executada do lado do usuário, mais especificamente pelo navegador utilizado por este usuário.
+            </p>
 
 
+    <h1>historico</h1>
 
-<footer>
+        <p>
+            Esta inovadora linguagem foi criada no ano de 1995, como dito
+            no início deste texto, pelo programador Brendan Eich que, na época, trabalhava para o navegador Netscape.
+        </p>
+        <p>
+            Com o objetivo de trazer mais “vida” à uma internet até então desenhada por imagens estáticas e textos,
+            a criação de uma linguagem de scripts acabou se tornando um grande trunfo competitivo para o Netscape.
+        </p>
+        <p>
+            Na época, os navegadores não eram nativos nos sistemas operacionais e para ter acesso a um software era necessário comprá-lo. Com o JavaScript,
+            o Netscape saiu à frente de seus concorrentes e se tornou o navegador mais utilizado do mercado em 1995.
+        </p>
+
+    <h1>fundamentos JavaScript</h1>
+
+        <h3>Variaveis</h3>
+
+            <p>
+                Variáveis são espaços na memória do computador onde você pode armazenar dados. Você começa declarando
+                uma variável com a  palavra-chave var ou a palavra chave let, seguida por qualquer nome que você queira
+                chamá-la
+            </p>
+
+            <p>
+                let minhavariavel = 'nome'; ou var minhavariavel = 'nome' ;
+            </p>
+
+        <h3>Array</h3>
+            <p>
+                Uma estrutura que permite armazenar vários valores(homogeneas e unidimensionais) em uma única variável,
+                conhecidas tambem como vetores.
+            </p>
+            <p class="exemplo">
+                let minhaVariavel = ['Everton','Zé','Steve','Fulano']; <br>
+                Acesse cada item do array dessa maneira: minhaVariavel[0], minhaVariavel[1], etc.
+            </p>
+
+        <h3>Funções</h3>
+            <p>
+                Funções são uma maneira de encapsular funcionalidades que você deseja reutilizar.
+                Quando você precisa de um procedimento, você pode chamar a função com um nome, 
+                em vez de reescrever o código inteiro a cada vez. Você já viu alguns usos de funções acima,
+                por exemplo:Funções são uma maneira de encapsular funcionalidades que você deseja reutilizar.
+                Quando você precisa de um procedimento, você pode chamar a função com um nome,
+                em vez de reescrever o código inteiro a cada vez. Você já viu alguns usos de funções acima, por exemplo:
+            </p>
+            <p class="exemplo">
+                function multiplica(num1,num2) { <br>
+                    let resultado = num1 * num2; <br>
+                    return resultado;
+                }
+            </p>
+
+        <h3>Laços de repetição</h3>
+            <p>
+                Você pode pensar em um laço de repetição como um jogo onde você manda o seu personagem
+                andar X passos em uma direção e Y passos em outra; por exemplo, a ideia "vá 5 passos para leste"
+                pode ser expressa em um laço desta forma:
+            </p>
+            <p class="exemplo">
+                var passo; <br>
+                    for (passo = 0; passo < 5; passo++) { <br>
+                    <!-- Executa 5 vezes, com os valores de passos de 0 a 4. -->
+                    console.log('Ande um passo para o leste');}
+            </p>
+            <p>
+                Os vários mecanismos diferentes de laços oferecem diferentes formas de determinar quando este 
+                irá começar ou terminar. Há várias situações em que é mais fácil resolver um problema utilizando
+                um determinado tipo de laço do que outros.Os tipos de laço são:
+            </p>
+
+            <ul>
+                <li>For</li>
+                    <p class="exemplo">
+                    for ([expressaoInicial]; [condicao]; [incremento]) br
+                    declaracao
+                    </p>
+                <li>Do...While</li>
+
+                    <p class="exemplo">
+                        do (faça) <br>
+                            declaracao (codigo a ser repetido) <br>
+                            while (condicao de parada);
+                    </p>
+
+                <li>Label</li>
+
+                    <p>
+                        Um label provê um identificador que permite que este seja referenciado em outro lugar no seu programa. Por exemplo, você pode usar uma label para identificar um laço, e então usar break ou continue para indicar quando o programa deverá interromper o laço ou continuar sua execução.
+                    </p>
+                    <p class="exemplo">
+                        label : declaracao
+                    </p>
+
+            </ul>
+
+    </div>
+
+</section>        
+
+<footer class="rodape">
     <p>
         fontes: <a href="https://kenzie.com.br/blog/javascript/">kenzie.com</a>
     </p>

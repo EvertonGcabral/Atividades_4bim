@@ -1,0 +1,37 @@
+
+.exemplo{
+    background-color: lightgray;
+    width: 30%;
+    padding: 20px;
+ 
+}
+
+.alinhar{
+    margin-left: 40%;
+
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.fundo{
+    background: white;
+    
+}
+
+.rodape{
+    background: black;
+    color: white;
+    height: 50px;
+    padding-top: 4px;
+    font-size: large;
+    text-align: center;
+}
+
+.all{
+    padding: 5%;
+    font-size: 20px;
+  
+}
