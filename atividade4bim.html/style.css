@@ -1,8 +1,14 @@
 
+*{
+    font-size:x-large;
+}
+ 
 .exemplo{
-    background-color: lightgray;
-    width: 30%;
+    background-color:rgb(27, 26, 26);
+    width: 70%;
     padding: 20px;
+    font-style: italic;
+
  
 }
 
@@ -22,16 +28,47 @@
 }
 
 .rodape{
-    background: black;
+    background: rgb(27, 27, 27);
     color: white;
-    height: 50px;
+    height: 80px;
     padding-top: 4px;
     font-size: large;
     text-align: center;
+    float: left;
+    width: 100%;
 }
 
 .all{
     padding: 5%;
     font-size: 20px;
   
+}
+
+.tabela{
+
+    border:1px solid black ; 
+    background-color:lightyellow;
+    width: 700px;
+    height: 200px;
+
+}
+
+.left{
+    width: 50%;
+    float: left;    
+}
+
+.right{
+    width: 50%;
+    float: left;
+}
+
+.titulo1{
+    color: yellow;
+}
+body{
+    background-color:slategrey
+}
+p{
+    color: white;
 }
