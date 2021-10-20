@@ -1,0 +1,81 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo formulario</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>cadastro</h1>
+        <p>preencha as informações</p>
+    </div> 
+
+<form action="">
+        <fieldset>
+
+            <div>
+                <label for="Nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="sobrenome">sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+
+        </fieldset>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label>Endereço se refere a qual tipo de residencia? 
+                <input type="radio" name="casa" value="casa" checked >Casa
+            </label>
+            <label>
+                <input type="radio" name="apartamento" value="apartamento">Apartamento 
+            </label>
+            <label>
+                <input type="radio" name="outros" value="outros">Outros 
+            </label>
+        </div>
+
+        <label>Idade</label>
+        <select name="idade" id="idade">
+            <option value="adolecente"> 15 a 20 </option>
+            <option value="experiente"> 20 a 25 </option>
+            <option value="adulto"> 30 + </option>
+        </select>
+
+        <fieldset>
+            <div>
+                <label>Selecione as tecnologias que utiliza</label>
+                <input type="checkbox" id="tec1" name="te1" value="HTML">
+                <label for="tec1">HTML</label>
+                <input type="checkbox" id="tec2" name="te2" value="CSS">
+                <label for="tec2">CSS</label>
+                <input type="checkbox" id="tec3" name="te3" value="JS">
+                <label for="tec3">JS</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Exemplo de post</label>
+            
+            <br>
+
+            <textarea name="post" id="post" rows="10" style="width: 26em;"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+</form>   
+
+</body>
+
+</html>
