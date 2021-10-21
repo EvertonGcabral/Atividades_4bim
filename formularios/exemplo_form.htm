@@ -4,35 +4,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo formulario</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
 
     <div>
-        <h1>cadastro</h1>
-        <p>preencha as informações</p>
+        <h1 id="titulo">cadastro</h1>
+        <p id="s.tituloo"> preencha as informações</p>
     </div> 
 
 <form action="">
-        <fieldset>
+        <fieldset class="grupo">
 
             <div>
-                <label for="Nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
             </div>
-            <div>
+            <div class="campo">
                 <label for="sobrenome">sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
 
         </fieldset>
 
-        <div>
+        <div class="campo">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
         </div>
 
-        <div>
+        <div class="campo">
             <label>Endereço se refere a qual tipo de residencia? 
                 <input type="radio" name="casa" value="casa" checked >Casa
             </label>
@@ -51,8 +52,8 @@
             <option value="adulto"> 30 + </option>
         </select>
 
-        <fieldset>
-            <div>
+        <fieldset class="grupo">
+            <div id="checkbox">
                 <label>Selecione as tecnologias que utiliza</label>
                 <input type="checkbox" id="tec1" name="te1" value="HTML">
                 <label for="tec1">HTML</label>
@@ -63,7 +64,7 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <br>
             <label>Exemplo de post</label>
             
@@ -72,7 +73,7 @@
             <textarea name="post" id="post" rows="10" style="width: 26em;"></textarea>
         </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="botao">Enviar</button>
 
 </form>   
 
