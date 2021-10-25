@@ -1,0 +1,78 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 2</title>
+    <link rel="stylesheet" href="styleex2.css">
+</head>
+ 
+<body>
+
+    <section>
+
+    <fieldset>
+        <div>
+            <h2 id>DADOS PESSOAIS</h2>
+            <hr>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+            <br><br><br>
+            <label for="sexo">Sexo: 
+                <input type="radio" name="M" id="M"> Masculino
+                <input type="radio" name="F" id="F"> Feminino
+                <input type="radio" name="Outros" id="outros">Outros
+                <br><br><br>
+            </label>
+            <label for="cpf">CPF: </label>
+            <input type="number" name="cpf" id="cpf">
+        </div>
+    </fieldset>
+    <fieldset>
+        <div>
+            <h2>ENDEREÇO</h2>
+            <hr>
+            <br>
+            <label for="estado">Estado: </label>
+            <input type="text" name="estado" id="estado">
+            <br><br><br>
+            <label for="cidade">Cidade: </label>
+            <input type="text" name="cidade" id="cidade">
+            <br><br><br>
+            <label for="bairro">Bairro: </label>
+            <input type="text" name="bairro" id="bairro">
+
+            <label for="rua">Rua:</label>
+            <input type="text" name="rua" id="rua">
+
+            <label for="numerocasa">N°: </label>
+            <input type="number" max="4">
+            <label for="complemento">
+                <input type="radio" name="casa" id="casa">Casa
+                <input type="radio" name="ap" id="ap">Apartamento
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div>
+            <h2>CONTATOS</h2>
+            <hr>
+            <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <label for="recuperacao">Email para recuperação: </label>
+                <input type="email" name="email2" id="email2">
+                <br><br><br>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="celular" id="celular" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}">
+                
+        </div>
+        <button class="botao" value="Enviar">Enviar
+    </fieldset>
+ 
+    </section>
+ 
+</body>
+</html>

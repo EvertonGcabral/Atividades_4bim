@@ -1,0 +1,104 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 3</title>
+    <link rel="stylesheet" href="styleex3.css">
+</head>
+<body>
+ 
+ 
+    <section class="fundo">
+ 
+        <div class="left">
+ 
+            <h3>
+                Cadastro de Produto:
+            </h3>
+            
+
+            <img src="img/notebook.png" id="img">
+            
+            <br>
+            <br>
+
+            <p>Ficha tecnica: </p>
+ 
+            <textarea name="Descricao" id="descricao" cols="30" rows="10">
+                - AMD Ryzen 7 – 3750H Quad core Frequência: De 2.30 GHz à 4.00 GHz
+ 
+                - 8GB (1x8GB) RAM DDR4
+ 
+                - Tela 15.6" Painel: IPS (1920 x 1080) Frame rate: 60 Hz
+ 
+                - NVIDIA® GeForce GTX™ 1650 com memória dedicada VRAM de 4GB GDDR5
+ 
+                - 1TB HDD 5400 RPM, 128GB SSD PCIe NVMe M.2
+            </textarea>
+           
+        </div>
+ 
+        <div class="right">
+
+
+            <h3>
+                Cadastro de Produto:
+            </h3>
+ 
+            <div class="">
+ 
+            <label for="nome">Nome do produto: </label>
+            <input type="text" id="nome" name="nome">
+ 
+            <br>
+            <br>
+ 
+            <label for="preço">Valor do produto: </label>
+            <input type="number" name="preço" id="preço">
+ 
+            <br>
+            <br>
+ 
+            <label for="Cor">Selecione a cor do Produto: </label>
+            <input type="color" id="cor" name="cor">
+ 
+            <br>
+            <br>
+ 
+            <label for="tpagamento">Forma de pagamento: </label>
+            <br>
+            <input type="radio" id="boleto"> Boleto
+            <br>
+            <input type="radio" id="credito"> Cartão de Credito
+            <br>
+            <input type="radio" id="debito"> Cartão Debito
+ 
+            <br>
+            <br>
+ 
+            <div>
+                <form action="/action_page.php" class="parcelas">
+                    <label for="parcelas"></label>Parcelas de credito
+                    <select id="parcelas" name="parcelas">
+                    <option value="saab"> 1x </option>
+                    <option value="saab"> 3x </option>
+                    <option value="saab"> 6x </option>
+                    <option value="saab"> 10x </option>
+                    <option value="saab"> 12x </option>
+                </form>
+ 
+            </div>
+   
+            <label for=""></label>
+            <input type="button" name="fim" id="fim" value="Terminar Cadastro">
+ 
+        </div>
+ 
+ 
+    </section>
+ 
+ 
+   
+</body>
+</html>
